@@ -12,5 +12,5 @@ html, body {
     bottom: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 9999; /* Ensure it's on top */
+    z-index: -1; /* Ensure it's behind other content */
 }
