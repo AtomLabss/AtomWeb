@@ -12,23 +12,21 @@
 		<script defer="" nomodule="" src="./assets/scripts/polyfills.js"></script>
 		<script src="./assets/scripts/webpack.js" defer=""></script>
 		<script src="./assets/scripts/framework.js" defer=""></script>
-		<script src="./assets/scripts/main.js" defer=""></script>
 		<script src="./assets/scripts/unknown.js" defer=""></script>
 		<script src="./assets/scripts/index.js" defer=""></script>
+
+		<style>
+			body {
+				background-image: url('./assets/images/background.png');
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-size: cover;
+			}
+		</style>
 	</head>
 	<body>
+		<div class="overlay"></div>
 		<div id="__next">
-			<div class="overlay"></div>
-
-			<style>
-				body {
-					background-image: url('./assets/images/background.png');
-					background-repeat: no-repeat;
-					background-attachment: fixed;
-					background-size: cover;
-				}
-			</style>
-
 			<div>
 				<navbar class="navbar">
 					<nav class="navbar-header">
