@@ -16,17 +16,27 @@
 		<script src="./assets/scripts/index.js" defer=""></script>
 	</head>
 	<body>
-		<div class="overlay"></div>
+		<div class="background-container">
+			<div class="overlay"></div>
+		</div>
 		<div id="__next">
 			<style>
 				body {
+					background: none; /* Remove background from body */
+				}
+				.background-container {
+					position: fixed;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
 					background-image: url('./assets/images/background.png');
 					background-repeat: no-repeat;
 					background-attachment: fixed;
 					background-size: cover;
+					z-index: -1; /* Move it behind everything else */
 				}
 			</style>
-
 			<div>
 				<navbar class="navbar">
 					<nav class="navbar-header">
