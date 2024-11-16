@@ -74,6 +74,10 @@
                                         <span className="p-color">Locks the channel you run the command in.</span>
                                       </li>
                                       <li>
+                                        <kbd>/module toggle</kbd> -
+                                        <span className="p-color">Toggles the state of a specific module.</span>
+                                      </li>
+                                      <li>
                                         <kbd>/purge</kbd> -
                                         <span className="p-color">Delete a specified number of messages out of 1 to 100.</span>
                                       </li>
@@ -122,12 +126,32 @@
                                     <span className="p-color">Get a randomized dad joke.</span>
                                   </li>
                                   <li>
-                                      <kbd>/echo</kbd> -
-                                      <span className="p-color">Sends a message as Atom, or as another member of the server.</span>
+                                    <kbd>/echo</kbd> -
+                                    <span className="p-color">Sends a message as Atom, or as another member of the server.</span>
+                                  </li>
+                                  <li>
+                                    <kbd>/gif</kbd> -
+                                    <span className="p-color">Sends a GIF from Tenor.</span>
                                   </li>
                                   <li>
                                     <kbd>/insult</kbd> -
                                     <span className="p-color">Returns a randomized insult.</span>
+                                  </li>
+                                  <li>
+                                    <kbd>/minecraft body</kbd> -
+                                    <span className="p-color">Returns the specified player's Minecraft body.</span>
+                                  </li>
+                                  <li>
+                                    <kbd>/minecraft head</kbd> -
+                                    <span className="p-color">Returns the specified player's Minecraft head.</span>
+                                  </li>
+                                  <li>
+                                    <kbd>/minecraft server</kbd> -
+                                    <span className="p-color">Returns the specified Minecraft server's information.</span>
+                                  </li>
+                                  <li>
+                                    <kbd>/minecraft skin</kbd> -
+                                    <span className="p-color">Returns the specified player's Minecraft skin.</span>
                                   </li>
                                   <li>
                                     <kbd>/monkey-monday</kbd> -
@@ -154,10 +178,74 @@
                         </section>
                         <input type="radio" name="accordion" id="cb3" />
                         <section class="box">
+                            <label class="box-title p-color" for="cb3">Ranking/Levelling 💬</label><label class="box-close" for="acc-close"></label>
+                            <div class="box-content p-color">
+                                <ul>
+                                    <li>
+                                        <kbd>/leaderboard</kbd> -
+                                        <span className="p-color">Shows a leaderboard of the top 10 level rankings in the server.</span>
+                                      </li>
+                                      <li>
+                                        <kbd>/level add</kbd> -
+                                        <span className="p-color">Adds a certain amount of levels for a user.</span>
+                                      </li>
+                                      <li>
+                                        <kbd>/level remove</kbd> -
+                                        <span className="p-color">Removes a certain amount of levels for a user.</span>
+                                      </li>
+                                      <li>
+                                        <kbd>/level set</kbd> -
+                                        <span className="p-color">Sets a certain amount of levels for a user.</span>
+                                      </li>
+                                      <li>
+                                        <kbd>/level reset</kbd> -
+                                        <span className="p-color">Resets a user's level.</span>
+                                      </li>
+                                      <li>
+                                        <kbd>/rank</kbd> -
+                                        <span className="p-color">Shows your rank in the server you run it in.</span>
+                                      </li>
+                                      <li>
+                                        <kbd>/xp add</kbd> -
+                                        <span className="p-color">Adds a certain amount of XP for a user.</span>
+                                      </li>
+                                      <li>
+                                        <kbd>/xp remove</kbd> -
+                                        <span className="p-color">Removes a certain amount of XP for a user.</span>
+                                      </li>
+                                      <li>
+                                        <kbd>/xp set</kbd> -
+                                        <span className="p-color">Sets a certain amount of XP for a user.</span>
+                                      </li>
+                                      <li>
+                                        <kbd>/xp reset</kbd> -
+                                        <span className="p-color">Resets a user's XP.</span>
+                                      </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <input type="radio" name="accordion" id="cb3" />
+                        <section class="box">
+                            <label class="box-title p-color" for="cb3">Supernova 🌟</label><label class="box-close" for="acc-close"></label>
+                            <div class="box-content p-color">
+                                <ul>
+                                    <li>
+                                        <kbd>/chat</kbd> -
+                                        <span className="p-color">Allows you to chat with AtomAI.</span>
+                                      </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <input type="radio" name="accordion" id="cb3" />
+                        <section class="box">
                             <label class="box-title p-color" for="cb3">Miscellaneous ❓</label><label class="box-close" for="acc-close"></label>
                             <div class="box-content p-color">
                                 <ul>
                                     <li>
+                                        <kbd>/changelog</kbd> -
+                                        <span className="p-color">Shows you the changelog for Atom.</span>
+                                      </li>
+                                      <li>
                                         <kbd>/feedback</kbd> -
                                         <span className="p-color">Allows you to send feedback about Atom to Atom Support.</span>
                                       </li>
@@ -178,8 +266,52 @@
                                         <span className="p-color">Shows a list of support staff/people who helped in the development of Atom.</span>
                                       </li>
                                       <li>
+                                        <kbd>/supernova</kbd> -
+                                        <span className="p-color">Shows information relating to Atom Supernova.</span>
+                                      </li>
+                                      <li>
                                         <kbd>/vote</kbd> -
                                         <span className="p-color">Allows you to vote for the bot on Top.gg.</span>
+                                      </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <input type="radio" name="accordion" id="cb3" />
+                        <section class="box">
+                            <label class="box-title p-color" for="cb3">Developer 🧑‍💻</label><label class="box-close" for="acc-close"></label>
+                            <div class="box-content p-color">
+                                <ul>
+                                    <li>
+                                        <kbd>/dev blacklist</kbd> -
+                                        <span className="p-color">Blacklists a user/server from using Atom (developers only).</span>
+                                      </li>
+                                      <li>
+                                        <kbd>/dev dm</kbd> -
+                                        <span className="p-color">DMs the specified user (developers only).</span>
+                                      </li>
+                                      <li>
+                                        <kbd>/dev kill</kbd> -
+                                        <span className="p-color">Shuts down Atom until started manually (developers only).</span>
+                                      </li>
+                                      <li>
+                                        <kbd>/dev reload</kbd> -
+                                        <span className="p-color">Reloads Atom's slash commands automatically (developers only).</span>
+                                      </li>
+                                      <li>
+                                        <kbd>/dev restart</kbd> -
+                                        <span className="p-color">Restarts Atom automatically (developers only).</span>
+                                      </li>
+                                      <li>
+                                        <kbd>/dev unblacklist</kbd> -
+                                        <span className="p-color">Unblacklists a user/server from using Atom (developers only).</span>
+                                      </li>
+                                      <li>
+                                        <kbd>/dev update</kbd> -
+                                        <span className="p-color">Updates Atom to the latest codebase (developers only).</span>
+                                      </li>
+                                      <li>
+                                        <kbd>/dev viewblacklist</kbd> -
+                                        <span className="p-color">Shows list of blacklisted people/servers for Atom (developers only).</span>
                                       </li>
                                 </ul>
                             </div>
@@ -214,7 +346,7 @@
                                 <p class="p-color">Created with ❤️ by <a class="h-color no-decoration" href="https://github.com/AtomLabss">AtomLabs</a></p>
                                 <p class="p-color">
                                   Latest version of Atom:<!-- -->
-                                  <a class="h-color no-decoration" href="https://github.com/AtomLabss/Atom">v1.1.3b</a>
+                                  <a class="h-color no-decoration" href="https://github.com/AtomLabss/Atom">v1.1.4b</a>
                                 </p>
                             </div>
                             <div class="footer-sec2-link">
