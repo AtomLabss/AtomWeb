@@ -452,3 +452,10 @@ input:checked+section.box .box-title:before {
     font-style: italic;
     color: #ffffff;
 }
+
+.bot-name-status {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    color: #ffffff;
+}
